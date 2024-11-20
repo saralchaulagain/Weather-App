@@ -1,0 +1,2 @@
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+--watch is used when you update the html/js files with a new class, it automatically regenerates output.css file and refreshes your browser to see the changes.
