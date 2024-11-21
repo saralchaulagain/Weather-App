@@ -12,12 +12,15 @@
     <div
         class="w-4/5 max-w-[600px] my-[120px] py-[80px] px-10 bg-gradient-to-b from-cyan-500 to-blue-500 text-white rounded-[30px] ">
         <div id="searchBox" class=" flex justify-between items-center">
-            <input type="text" placeholder="Enter the place name" spellcheck="false"
+            <input type="text" placeholder="Enter the place name" spellcheck="false" id="inputbox"
                 class="border-none outline-none rounded-[30px] h-[60px] py-2.5 text-[23px] px-4 flex-1 text-stone-700 mr-[30px]">
             <button class="size-[60px] cursor-pointer "><img src="../img/search.png" alt="search"></button>
         </div>
-        <div class="flex flex-col justify-center items-center gap-5 mt-7">
-            <img src="../img/weather.png" alt="" class="w-[200px]">
+        <div id="error" class="hidden ml-4 mt-3">
+            <p>Invalid Place Name</p>
+        </div>
+        <div id="weather" class="hidden flex-col justify-center items-center gap-5 mt-7">
+            <img id="icon" src="../img/weather.png" alt="" class="w-[200px]">
             <h1 id="temp" class="text-7xl font-medium">10°c</h1>
             <h2 id="city" class="text-5xl ">Bhaktapur</h2>
             <div class="w-full flex justify-around mt-10  ">
