@@ -11,33 +11,34 @@
 <body class="bg-zinc-900 font-ubuntu w-full flex justify-center">
     <div
         class="w-4/5 max-w-[600px] my-[120px] py-[80px] px-10 bg-gradient-to-b from-cyan-500 to-blue-500 text-white rounded-[30px] ">
-        <div class=" flex justify-between items-center">
+        <div id="searchBox" class=" flex justify-between items-center">
             <input type="text" placeholder="Enter the place name" spellcheck="false"
                 class="border-none outline-none rounded-[30px] h-[60px] py-2.5 text-[23px] px-4 flex-1 text-stone-700 mr-[30px]">
             <button class="size-[60px] cursor-pointer "><img src="../img/search.png" alt="search"></button>
         </div>
         <div class="flex flex-col justify-center items-center gap-5 mt-7">
             <img src="../img/weather.png" alt="" class="w-[200px]">
-            <h1 class="text-7xl font-medium">10°c</h1>
-            <h2 class="text-5xl ">Bhaktapur</h2>
+            <h1 id="temp" class="text-7xl font-medium">10°c</h1>
+            <h2 id="city" class="text-5xl ">Bhaktapur</h2>
             <div class="w-full flex justify-around mt-10  ">
                 <div class="flex gap-1">
                     <img src="../img/humidity.png" alt="Humidity" class="size-12">
                     <div class="flex flex-col gap-1">
-                        <h3 class="text-3xl">99%</h3>
+                        <h3 id="humidity" class="text-3xl">99%</h3>
                         <h4 class="text-xl">Humidity</h4>
                     </div>
                 </div>
                 <div class="flex gap-1">
                     <img src="../img/wind.png" alt="Wind" class="size-12">
                     <div class="flex flex-col gap-1">
-                        <h3 class="text-3xl">3 km/h</h3>
+                        <h3 id="wind" class="text-3xl">3 km/h</h3>
                         <h4 class="text-xl">Wind</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
